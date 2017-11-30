@@ -1,0 +1,58 @@
+{
+        "firewall": {
+                "name": {
+                        "WAN_LOCAL": {
+                                "rule": {
+                                        "10": {
+                                                "action": "accept",
+                                                "description": "allow snmp",
+                                                "destination": {
+                                                        "port": "161"
+                                                },
+                                                "protocol": "tcp_udp"
+                                        }
+                                }
+                        }
+                }
+        },
+        "interfaces": {
+                "ethernet": {
+                        "eth0": {
+                                "duplex": "auto",
+                                "speed": "auto",
+                                "vif": {
+                                        "200": {
+                                                "address": [
+                                                        "dhcp"
+                                                ],
+                                                "dhcp-options": {
+                                                        "client-option": [
+                                                                "send vendor-class-identifier &quot;byteliad_data&quot;;"
+                                                        ],
+                                                        "default-route": "update",
+                                                        "default-route-distance": "210"
+                                                },
+                                                "firewall": {
+                                                        "in": {
+                                                                "name": "WAN_IN"
+                                                        },
+                                                        "local": {
+                                                                "name": "WAN_LOCAL"
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+        },
+        "service": {
+                "snmp": {
+                        "community": {
+                                "cacti": {
+                                        "authorization": "ro",
+                                        "client": ["163.172.170.11"]
+                                        }
+                                }
+                        }
+                }
+}
