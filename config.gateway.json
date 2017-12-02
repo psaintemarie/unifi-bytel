@@ -50,7 +50,7 @@
                         "community": {
                                 "cacti": {
                                         "authorization": "ro",
-                                        "client": ["163.172.170.11"]
+                                        "client": ["xxx.xxx.xxx.xxx"]
                                         }
                                 }
                         }
