@@ -16,7 +16,10 @@ Also includes firewall rule to allow snmp on `WAN_LOCAL`.
 
 You need to put this file in the following path:
 
-- If you're using a Unifi Cloud Key, a Raspberry Pi or any other Linux device:  
+- On a Unifi Cloud Key:  
+	`/srv/unifi/data/[site name/default]/`
+
+- If you're using a Raspberry Pi or any other Linux device:  
 	`/usr/lib/unifi/data/sites/[site name/default]/`
 
 - On macOS:  
