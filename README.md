@@ -20,11 +20,11 @@ You need to put this file in the following path:
 	`/usr/lib/unifi/data/sites/[site name/default]/`
 
 - On macOS:  
-	`/Applications/UniFi.app/Contents/Resources`  
+	`/Applications/UniFi.app/Contents/Resources/`  
 	_TIP: do not double click on UniFi.app, as it will launch the application, instead, right click > Show Package Contents._  
 
 - On Windows:  
-	`"%userprofile%/Ubiquiti Unifi"` 
+	`"%userprofile%/Ubiquiti Unifi/"` 
 	
 An easy way to test the validity of the json file is: `python -m json.tool config.gateway.json`
 
