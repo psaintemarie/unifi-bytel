@@ -48,9 +48,9 @@
         "service": {
                 "snmp": {
                         "community": {
-                                "cacti": {
+                                "snmp_CHANGE_ME": {
                                         "authorization": "ro",
-                                        "client": ["xxx.xxx.xxx.xxx"]
+                                        "client": ["CHANGE_ME_IP_ADDRESS"]
                                         }
                                 }
                         }
