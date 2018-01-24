@@ -6,7 +6,7 @@ If you want to use a Unifi USG3 instead of the BBox used on Bouygues Telecom FTT
 
 This is a basic Unifi config to use with [Ubiquiti Unifi USG](https://www.ubnt.com/unifi-routing/usg/) and [Bouygues Telecom FTTH](https://www.bouyguestelecom.fr/offres-internet/internet-fibre-ftth).
 
-It does include some basic SNMP settings with:
+It does include some basic SNMP settings for external monitoring with:
 
 - community name (change with your own details)  
 - authorization = ro
