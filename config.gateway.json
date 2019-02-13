@@ -21,13 +21,13 @@
                                 "duplex": "auto",
                                 "speed": "auto",
                                 "vif": {
-                                        "200": {
+                                        "100": {
                                                 "address": [
                                                         "dhcp"
                                                 ],
                                                 "dhcp-options": {
                                                         "client-option": [
-                                                                "send vendor-class-identifier &quot;byteliad_data&quot;;"
+                                                                "send vendor-class-identifier &quot;BYGTELIAD&quot;;"
                                                         ],
                                                         "default-route": "update",
                                                         "default-route-distance": "210"

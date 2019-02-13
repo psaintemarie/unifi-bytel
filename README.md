@@ -2,7 +2,7 @@
 
 ![USG3](https://github-assets.meleia.net/images/unifi/USG3.png "USG3") ![ByTel logo](https://github-assets.meleia.net/images/unifi/bytel.png "ByTel Logo")
 
-If you want to use a Unifi USG3 instead of the BBox used on Bouygues Telecom FTTH contracts, here's some things you need to know (this is only for internet, no TV, no phone). Bouygues Telecom uses VLAN 200 for internet access through DHCP when directly connected to the GPON ONT. It also requires some `client-option` to be set to `send vendor-class-identifier "byteliad_data"`.
+If you want to use a Unifi USG3 instead of the BBox used on Bouygues Telecom FTTH contracts, here's some things you need to know (this is only for internet, no TV, no phone). Bouygues Telecom uses VLAN 100 for internet access through DHCP when directly connected to the GPON ONT. It also requires some `client-option` to be set to `send vendor-class-identifier "BYGTELIAD"`.
 
 This is a basic Unifi config to use with [Ubiquiti Unifi USG](https://www.ubnt.com/unifi-routing/usg/) and [Bouygues Telecom FTTH](https://www.bouyguestelecom.fr/offres-internet/internet-fibre-ftth).
 
